@@ -1,13 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300");
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(264deg, #419ae2, #668dec, #7939ff);
+  background-size: 600% 600%;
+  -webkit-animation: backgroundGradient 7s ease infinite;
+  -moz-animation: backgroundGradient 7s ease infinite;
+  animation: backgroundGradient 7s ease infinite;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+}
+
+@-webkit-keyframes backgroundGradient {
+  0% {
+    background-position: 63% 0%;
+  }
+  50% {
+    background-position: 38% 100%;
+  }
+  100% {
+    background-position: 63% 0%;
+  }
+}
+@-moz-keyframes backgroundGradient {
+  0% {
+    background-position: 63% 0%;
+  }
+  50% {
+    background-position: 38% 100%;
+  }
+  100% {
+    background-position: 63% 0%;
+  }
+}
+@keyframes backgroundGradient {
+  0% {
+    background-position: 63% 0%;
+  }
+  50% {
+    background-position: 38% 100%;
+  }
+  100% {
+    background-position: 63% 0%;
+  }
 }
