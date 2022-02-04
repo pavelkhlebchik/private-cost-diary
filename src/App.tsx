@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React, { FC } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './routes/HomePage/HomePage';
+import NewCardPage from './routes/NewCardPage/NewCardPage';
+
+const App: FC = () => (
+  <Routes>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/home" element={<HomePage />} />
+    {/* <Route path="/all" element={<TasksPage />} />
+    <Route path="/new" element={<NewCardPage />} />
+    */}
+    <Route path="/new" element={<NewCardPage />} />
+  </Routes>
+);
+
+// тут мы делаем роуты
 
 export default App;
