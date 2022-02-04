@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  background-color: #f0f0f0;
+}
